@@ -6,6 +6,8 @@ export const StoreContext = createContext(null);
 const StoreProvider = ({ children }) => {
   // dane o uzytkownikach i produktach
   const [users, setUsers] = useState();
+  const [activeUser, setActiveUser] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const listOfUsers = usersList.usersData;
@@ -17,6 +19,10 @@ const StoreProvider = ({ children }) => {
       value={{
         users,
         setUsers,
+        activeUser,
+        setActiveUser,
+        isLoggedIn,
+        setIsLoggedIn,
       }}
     >
       {children}

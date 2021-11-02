@@ -1,9 +1,11 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/gun.png";
+import { StoreContext } from "../store/StoreProvider";
 
 const MainNav = () => {
+  const { isLoggedIn } = useContext(StoreContext);
   const menuElements = [
-    { name: "Profil", path: "/hero" },
     { name: "Robota", path: "/rob" },
     { name: "Machlojki", path: "/" },
     { name: "Gang", path: "/mafia" },
@@ -36,6 +38,10 @@ const MainNav = () => {
 
   const menuElToShow = menuElements.map((i) => menuElement(i.name, i.path));
 
+  const loginEl = isLoggedIn
+    ? menuElement("Profil", "/hero")
+    : menuElement("Zaloguj", "/login");
+
   return (
     <>
       <div className="mainNav__wrapper">
@@ -45,7 +51,10 @@ const MainNav = () => {
               <img className="mainNav__logo" src={logo} alt="logo" />
             </Link>
           </div>
-          <ul className="mainNav__ul">{menuElToShow}</ul>
+          <ul className="mainNav__ul">
+            {loginEl}
+            {menuElToShow}
+          </ul>
           <button className="mainNav__button" onClick={handleShowMenu}>
             <i class="fa fa-bars"></i>
           </button>

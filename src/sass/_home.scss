@@ -1,0 +1,31 @@
+.home{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__left-panel{
+        flex-basis: 100%;
+        padding: 25px;
+        @media #{map-get($device-media-queries, md)}{flex-basis: 60%;}
+    }
+    &__right-panel{
+        flex-basis: 100%;
+        padding: 25px;
+        @media #{map-get($device-media-queries, md)}{flex-basis: 30%;}
+    }
+    &__topPlayers, &__statsPanel, &__competition{
+        margin: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: $primary-color;
+    }
+    &__title{
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+    &__text {
+        padding: 10px 0;
+
+    }
+}
