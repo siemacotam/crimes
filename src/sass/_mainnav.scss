@@ -1,0 +1,84 @@
+.mainNav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media #{map-get($device-media-queries, sm)}{height: 60px;}
+    .mainNav__logo-wrapper{
+        margin: 5px 10px;
+        height: 50px;
+        .mainNav__logo{
+        }
+    }
+    .mainNav__ul{
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: $primary-color;
+
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        order: 3;
+        margin: 0 auto;
+        transform: translate(-100%, 0);
+        transition: .5s;
+        &--show{
+            transform: translate(0%, 0%);
+        }
+        @media #{map-get($device-media-queries, sm)}{
+            position: relative;
+            top: 0;
+
+            justify-content: space-evenly;
+            transform: translate(0%, 0%);
+            order: 2;
+            height: auto;
+            flex-direction: row;
+            flex-basis: content;
+            flex-grow: 1;
+        }
+        .mainNav__element{
+            flex-basis: 5%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: darken($primary-color, 5%);
+            @media #{map-get($device-media-queries, sm)}{
+                flex-basis: 15%;
+            }
+            .mainNav__link{
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Roboto Condensed', sans-serif;
+                letter-spacing: 2px;
+                font-weight: bold;
+                padding: 8px;
+                color: black;
+                transition: .5s;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+    .mainNav__button{
+        z-index: 1;
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        background-color: $primary-color;
+        font-size: 30px;
+        @media #{map-get($device-media-queries, sm)}{display: none;}
+    }
+}
+
+.mainNav__wrapper {
+    background-color: $primary-color;
+}

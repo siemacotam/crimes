@@ -1,0 +1,16 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$device-media-queries: (
+    xs: '(min-width: 0)',
+    sm: '(min-width: 576px)',
+    md: '(min-width: 768px)',
+    lg: '(min-width: 992px)',
+    xl: '(min-width: 1200px)',
+    xxl: '(min-width: 1400px)',
+);
+
+.bodyBlock {
+    overflow: hidden;
+}
