@@ -1,9 +1,41 @@
+footer {
+    background-color: darken($primary-color, 20%);
+}
+
 .footer{
-    .footer__container-up{
-        padding: 15px 0;
-        background-color: darken($primary-color, 20%)
+    &__title{
+        border-bottom: 1px solid darken($primary-color, 50%);
+        margin: 0 30px;
     }
-    .footer__container-down{
+    &__container-up{
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    &__navs-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @media #{map-get($device-media-queries, sm)}{flex-wrap: nowrap;}
+    }
+    &__nav-container{
+        flex-basis: 100%;
+        margin: 0 30px;
+        padding: 15px 0;
+        @media #{map-get($device-media-queries, sm)}{flex-basis: 25%;}
+    }
+    &__subtitle{
+        padding: 5px 0 10px;
+        letter-spacing: 1.5px;
+        color: $h-color;
+        font-family: $special-font;
+    }
+    &__li{
+        padding: 7px 0;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    &__container-down{
         padding: 20px 0;
         background-color: darken($primary-color, 50%)
     }

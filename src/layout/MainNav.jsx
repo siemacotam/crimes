@@ -37,7 +37,7 @@ const MainNav = () => {
   const menuElement = (name, path) => {
     return (
       <li key={name} className="mainNav__element">
-        <Link to={path} className="mainNav__link" onClick={handleShowMenu}>
+        <Link to={path} className="mainNav__link" onClick={handleCloseMenu}>
           {name}
         </Link>
       </li>
