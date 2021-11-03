@@ -6,6 +6,7 @@ import Hero from '../components/Hero/Hero';
 import Rob from '../components/Rob/Rob';
 import Mafia from '../components/Mafia/Mafia';
 import MainNav from './MainNav';
+import Footer from './Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/mafia" exact render={() => <Mafia />} />
           <Redirect to="/"></Redirect>
         </Switch>
+        <Footer />
     </Router>
   );
 }

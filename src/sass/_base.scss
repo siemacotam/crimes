@@ -24,7 +24,16 @@ table {
     width: 100%;
     margin-bottom: 1rem;
     text-align: left;
+    border: 1px solid white;
+    background-color: darken($primary-color, 50%);
+    color: white;
+    padding: 6px 3px;
+    border-radius: 5px;
 }
 th {
     border-bottom: 3px solid black;
+}
+td {
+    padding: 5px;
+    border-bottom: 1px solid darken($primary-color, 55%);
 }
