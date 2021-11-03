@@ -1,0 +1,10 @@
+.footer{
+    .footer__container-up{
+        padding: 15px 0;
+        background-color: darken($primary-color, 20%)
+    }
+    .footer__container-down{
+        padding: 20px 0;
+        background-color: darken($primary-color, 50%)
+    }
+}
