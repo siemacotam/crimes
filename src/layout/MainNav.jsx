@@ -5,12 +5,20 @@ import { StoreContext } from "../store/StoreProvider";
 
 const MainNav = () => {
   const { isLoggedIn } = useContext(StoreContext);
-  const menuElements = [
-    { name: "Robota", path: "/rob" },
-    { name: "Machlojki", path: "/" },
-    { name: "Gang", path: "/mafia" },
-    { name: "Sklep", path: "/shop" },
-  ];
+  const menuElements = {
+    loggedUser: [
+      { name: "Profil", path: "/hero" },
+      { name: "Akcje", path: "/rob" },
+      { name: "Miejsca", path: "/" },
+      { name: "Gang", path: "/mafia" },
+      { name: "Sklep", path: "/shop" },
+    ],
+    guest: [
+      { name: "Zaloguj", path: "/register" },
+      { name: "Statystyki", path: "/stats" },
+      { name: "Pomoc", path: "/help" },
+    ],
+  };
 
   const handleShowMenu = () => {
     document
@@ -28,7 +36,7 @@ const MainNav = () => {
 
   const menuElement = (name, path) => {
     return (
-      <li className="mainNav__element">
+      <li key={name} className="mainNav__element">
         <Link to={path} className="mainNav__link" onClick={handleShowMenu}>
           {name}
         </Link>
@@ -36,11 +44,9 @@ const MainNav = () => {
     );
   };
 
-  const menuElToShow = menuElements.map((i) => menuElement(i.name, i.path));
-
-  const loginEl = isLoggedIn
-    ? menuElement("Profil", "/hero")
-    : menuElement("Zaloguj", "/login");
+  const menuElToShow = isLoggedIn
+    ? menuElements.loggedUser.map((i) => menuElement(i.name, i.path))
+    : menuElements.guest.map((i) => menuElement(i.name, i.path));
 
   return (
     <>
@@ -51,12 +57,9 @@ const MainNav = () => {
               <img className="mainNav__logo" src={logo} alt="logo" />
             </Link>
           </div>
-          <ul className="mainNav__ul">
-            {loginEl}
-            {menuElToShow}
-          </ul>
+          <ul className="mainNav__ul">{menuElToShow}</ul>
           <button className="mainNav__button" onClick={handleShowMenu}>
-            <i class="fa fa-bars"></i>
+            <i className="fa fa-bars"></i>
           </button>
         </nav>
       </div>
