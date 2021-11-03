@@ -1,9 +1,9 @@
 const StatsPanel = () => {
   return (
     <div className="home__statsPanel">
-      <p className="text-bold">Statystyki</p>
-      <p>1000 graczy</p>
-      <p>aktywni : 100</p>
+      <h4 className="text-bold home__subtitle">Statystyki</h4>
+      <p>Online: 532</p>
+      <p>Aktywni gracze: 1500</p>
     </div>
   );
 };

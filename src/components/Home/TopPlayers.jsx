@@ -1,7 +1,7 @@
 const TopPlayers = () => {
   return (
     <div className="home__topPlayers">
-      <p className="text-bold">Top gracze</p>
+      <h4 className="home__subtitle text-bold">Top gracze</h4>
       <table>
         <thead>
           <tr>
@@ -10,21 +10,23 @@ const TopPlayers = () => {
             <th>Respekt</th>
           </tr>
         </thead>
-        <tr>
-          <td>1</td>
-          <td>Maria</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Francisco</td>
-          <td>80</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Jacob</td>
-          <td>60</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Maria</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Francisco</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Jacob</td>
+            <td>60</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );
