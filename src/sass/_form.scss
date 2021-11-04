@@ -1,4 +1,6 @@
 .form{
+    max-width: 700px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,21 +12,17 @@
         .form__label {
             padding-bottom: 5px;
             font-weight: bold;
+            &--flex{
+                display: flex;
+                padding: 15px 0;
+            }
         }
         .form__input {
             padding: 6px;
             margin-bottom: 3px;
-        }
-    }
-    &__button {
-        width: 80%;
-        margin: 0 auto;
-        background-color: darken($primary-color, 30%);
-        padding: 6px 20px;
-        transition: .3s;
-        &:hover {
-            background-color: black;
-            color: white;
+            &--checkbox{
+                margin: 0 15px 0 0;
+            }
         }
     }
     &__question {

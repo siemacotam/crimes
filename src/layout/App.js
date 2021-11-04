@@ -7,6 +7,8 @@ import Rob from '../components/Rob/Rob';
 import Mafia from '../components/Mafia/Mafia';
 import MainNav from './MainNav';
 import Footer from './Footer';
+import Register from '../components/Register/Register';
+
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
           <Route path="/hero" exact render={() => <Hero />} />
           <Route path="/rob" exact render={() => <Rob />} />
           <Route path="/mafia" exact render={() => <Mafia />} />
+          <Route path="/register" exact render={() => <Register />} />
           <Redirect to="/"></Redirect>
         </Switch>
         <Footer />

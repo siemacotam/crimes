@@ -14,7 +14,7 @@ const MainNav = () => {
       { name: "Sklep", path: "/shop" },
     ],
     guest: [
-      { name: "Zaloguj", path: "/register" },
+      { name: "Zarejestruj", path: "/register" },
       { name: "Statystyki", path: "/stats" },
       { name: "Pomoc", path: "/help" },
     ],

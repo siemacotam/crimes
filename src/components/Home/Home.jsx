@@ -1,5 +1,5 @@
 import Competition from "./Competition";
-import LoginPanel from "./LoginPanel";
+import LoginPanel from "../LoginPanel/LoginPanel";
 import StatsPanel from "./StatsPanel";
 import TopPlayers from "./TopPlayers";
 import WelcomePanel from "./WelcomePanel";
