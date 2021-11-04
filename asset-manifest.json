@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/crimes/static/css/main.91fac3e4.chunk.css",
-    "main.js": "/crimes/static/js/main.6f2c8b2a.chunk.js",
-    "main.js.map": "/crimes/static/js/main.6f2c8b2a.chunk.js.map",
+    "main.css": "/crimes/static/css/main.a4d6746c.chunk.css",
+    "main.js": "/crimes/static/js/main.fb490a87.chunk.js",
+    "main.js.map": "/crimes/static/js/main.fb490a87.chunk.js.map",
     "runtime-main.js": "/crimes/static/js/runtime-main.48eee6b8.js",
     "runtime-main.js.map": "/crimes/static/js/runtime-main.48eee6b8.js.map",
-    "static/js/2.470424fb.chunk.js": "/crimes/static/js/2.470424fb.chunk.js",
-    "static/js/2.470424fb.chunk.js.map": "/crimes/static/js/2.470424fb.chunk.js.map",
+    "static/js/2.11ac0dda.chunk.js": "/crimes/static/js/2.11ac0dda.chunk.js",
+    "static/js/2.11ac0dda.chunk.js.map": "/crimes/static/js/2.11ac0dda.chunk.js.map",
     "index.html": "/crimes/index.html",
-    "static/css/main.91fac3e4.chunk.css.map": "/crimes/static/css/main.91fac3e4.chunk.css.map",
-    "static/js/2.470424fb.chunk.js.LICENSE.txt": "/crimes/static/js/2.470424fb.chunk.js.LICENSE.txt"
+    "static/css/main.a4d6746c.chunk.css.map": "/crimes/static/css/main.a4d6746c.chunk.css.map",
+    "static/js/2.11ac0dda.chunk.js.LICENSE.txt": "/crimes/static/js/2.11ac0dda.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.48eee6b8.js",
-    "static/js/2.470424fb.chunk.js",
-    "static/css/main.91fac3e4.chunk.css",
-    "static/js/main.6f2c8b2a.chunk.js"
+    "static/js/2.11ac0dda.chunk.js",
+    "static/css/main.a4d6746c.chunk.css",
+    "static/js/main.fb490a87.chunk.js"
   ]
 }
